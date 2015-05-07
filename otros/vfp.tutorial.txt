@@ -1,0 +1,426 @@
+Tipos de Datos
+
+	Numeric
+		3
+		3.14
+
+	Caracter
+		"Hola"
+		'Hola'
+
+	Logico
+		.t.
+		.f.
+
+	Date
+		{^1970/12/03}
+
+	Datetime
+		{ {1970/12/03 14:35:59}}
+
+
+Variables
+	nTotal = 10
+	m.Nombre = 'Ignacio'
+
+Arreglos
+	dimension nombres[3]
+	nombres[1] = 'Hugo'
+	nombres[2] = 'Paco'
+	nombres[3] = 'Luis'
+	? nombres[1]
+
+
+Operadores
+	==		if nTotal == 0
+	<>		if nTotal <> 0
+	+		x = x + 1
+	-		y = y - 1
+	/		nFactor = nValor / 1.1
+	*		nImporte = nTotal * nTC
+
+
+Comentarios
+	Al inicio de linea con *
+	A la derecha de linea con &&
+
+Print
+	? <Expr>
+	? 10
+	? 'Ignacio'
+	nTotal = 1500
+	? nTotal
+
+Ciclos FOR
+
+	for i=1 to 100
+		? i
+	next
+
+	dimension aNombres[3]
+	aNombres[1] = 'Hugo'
+	aNombres[2] = 'Paco'
+	aNombres[3] = 'Luis'
+	for each cNombre in aNombres
+		? cNombre
+	next
+
+IF
+	nCalif = 100
+	if nCalif >= 90
+		? 'Felicidades'
+	else
+		? 'Debes estudiar más'
+	endif
+
+
+Ciclo DoWhile Sencillo
+	nRenglon = 1
+	do while nRenglon <= 50
+		? 'Este es el renglon:', nRenglon
+	enddo
+
+Ciclo DoWhile / Loop / Exit
+	nRenglon = 1
+	do while nRenglon <= 50
+		* Con esta funcion los renglones pares los saltaremos y nos los imprimimos
+		if mod(nRelgon,2)==0
+			loop	
+		endif
+		? 'Este es el renglon:', nRenglon
+		* Si renglon es mayor a 40, me salgo del ciclo
+		if nRenglon>40
+			exit
+		endif
+	enddo
+
+
+Ciclio Scan Database
+	* crear una table y llenarla con 3 registros
+	create table clientes ( nombre c(30), ciudad c(30))
+	insert into clientes values ('Juan Perez','Monterrey')
+	insert into clientes values ('Jose Lopez','Mexicali')
+	insert into clientes values ('Luis Ramos','Torreón')
+	* Recorrer la tabla e imprimir los datos
+	scan
+		? clientes.nombre, clientes.ciudad
+	endscan
+
+Funciones de String
+	? chr(65)
+	? substr('Adios Mundo Cruel',7,3)
+	? left('Mexico',3)
+	? right('Tijuana',5)
+	? at(xx,yy) ???
+	? strtran('Rapido Ruedan las Ruedas', 'R', 'RR') ???
+
+
+Funciones Matematicas
+	? abs(-50)
+	? mod(100,2)
+	? round(3.1416,3)
+	? ceil(3.1416)
+	? int(3.1416)
+
+Abreviacion con 4 letras
+	Modify Command miprograma
+	Modi Comm miprograma
+	? roun(19.5,0)
+	20
+
+Editor de VFP
+	Modi Comm
+
+Compilar programa
+	Program / Compile
+	Genera el archivo .fxp
+	FXP Compilado de FoxPro
+
+Tipos de Variables
+	Mencionar que las variables son de tipo flexible, es decir puede cambiar de tipom 
+	Total = 100
+	Total = 'Cien'
+	Total = date()
+	Total = .t.
+	Total = .f.
+
+Arreglos
+	Inician en 1 hasta N
+
+Notacion, de variables
+	Metodo que usas para nombrar tus variables, propiedades, clases y funciones
+	camel typed
+	Metodos o funciones, incian con Minuscula, la siguientes palabras incial con mayuscula
+		totalFactura
+	Mal no usar
+		bandera
+		perro
+	Iniciamos la variables con una letra que indica el tipo
+		nTotal  	es numerica / integre
+		dFecha		es fecha o date
+		cNombre		es caracter / character / string
+		lExiste		es logica o boleana (true o false)
+		oForma		es un objeto
+		aClientes	es un arreglo / array / matriz de cliente
+
+
+
+
+proceso.prg
+	function proceso
+		? 'Este procedimiento imprime el factorial de 5 que es:'
+		? factorial(5)
+		? 'Gracias'
+	return
+
+return por defaul, regresa un true .t.
+	return = return .t.
+
+
+Llamar a un funcion:
+	do proceso
+	proceso()  <--- Preferible por similtud con C, php, java, etc
+
+Parametros Por Valor
+====================
+Por default los parametros son pasados por valor. Es decir se crea una copia.
+Ejemplo
+	nValor = 7
+	? factorial(nValor)
+	
+
+Parametros por referencia
+=========================
+Si queremos que una funcion modifique a un parametro, necesitamos usar @ al llamar a la funcion
+ejemplo3.prg:
+	function ejemplo3
+		cFactura = 'A199'
+		dFecha = {}
+		if existeFactura(cFactura,@dFecha)
+			? 'La factura ', cFactura, ' fue elaborada el día', dFecha
+		else
+			? 'No existe la factura ',cFactura
+		endif
+	return
+
+	*
+	* esta funcion busca la factura que se pasa en la tabla de facturas
+	* regresa true si es que existe
+	* false si no existe
+	* ademas en caso de existir modifica la variable dFecha, con la fecha de factura
+	*
+	function existeFactura (cFact, dFec)
+		* simular que buscamos factura
+		dFec = date()
+		* regresamos true, indicando que SI se encontró la factura
+	return  .t.
+
+
+Probar el procedimiento en Command
+	ejemplo3()
+NOTA/TRUCO Los arreglos siempre deben pasarse por referencia. Siempre usar @
+de lo contrario solamente se pasará el primer elemento del arreglo.
+
+
+Usar Objetos
+============
+Crear objeto, asinar valor a propiedades, llamar met
+En Command teclear las siguientes instrucciones:
+	oForma = newObject('form')			&& Crear el objeto
+	oForma.show()						&& Llamar/Invocar al metodo show() para mostrar la forma
+	oForma.caption = 'MiApp Personal'	&& Modificar propiedades
+	oForma.width = 500
+	oForma.height = 200
+	oForma.hide()						&& Llamar metodos
+	oForma.show()
+	release oForma						&& Destruir variable y objeto
+
+Crear clases
+============
+
+archivo modi comm libreria.prg
+
+	define class miClase as custom
+		miPropiedad1 = ''
+		miPropiedad2 = 3.1416
+
+		function saludar()
+			? 'Hola, estoy ejecutando el metodo saludar'
+		return
+
+		function sumar(num1,num2)
+			? 'Hola voy  a sumar ',num1,num2
+		return num1 + num2
+
+	enddefine
+
+Pruebas en Command
+	oObjeto1 = newObject('miClase','libreria.prg')
+	oObjeto1.saludar()
+	? oObjeto1.sumar(30,20)
+
+
+
+define class clientes as custom
+	id = 0
+	nombre = ''
+	telef  = ''
+	ciudad = ''
+
+
+	*
+	* crearTabla()
+	* Crea la tabla de clientes, que es donde almacenaramos la informacion
+	*
+	function crearTabla()
+		create table clientes ( id n(5), nombre c(50), telefono c(30), ciudad c(50))
+		index clientes on id tag id
+	return
+
+
+	*
+	* abrirTabla()
+	* Abre la tabla de cliente o la crea en caso de ser necesario
+	*
+	function abrirTabla()
+		if not file('clientes.dbf')
+			this.crearTabla()
+			return
+		endif
+		use clientes in 0 order id
+	return
+
+
+	*
+	* agregar()
+	* Agrega un cliente a la base de datos, con la informacion
+	* contenida en las propiedades del objeto
+	*
+	function agregar()
+		* obtener el ultimo id existente en la tabla
+		select max(id) as maxid from clientes into cursor temp
+		nLastId = temp.maxid + 1
+		* agregar un registro a la tabla
+		insert into clientes (id, nombre, telef, ciudad) values ;
+			(this.id, this.nombre, this.telef, this.ciudad)
+	return
+
+
+	*
+	* actualizar()
+	* Actualiza la informacion del cliente, almacenandola en la base de datos
+	*
+	function actualizar()
+		select clientes
+		update clientes set ;
+			nombre	= this.nombre,;
+			telef	= this.telef,;
+			ciudad	= this.ciudad ;
+		where id == this.id
+	return
+
+
+	* 
+	* eliminar()
+	* Elimina el registro del cliente con id
+	*	
+	function eliminar()
+		delete from clientes where id==this.id
+	return
+
+
+
+	*
+	* cargar(nId)
+	* Carga el objeto con los datos del cliente que tiene el id que se manda como parametro
+	*
+	function cargar(nId)
+		this.initValues()
+		select * from clientes where id==nId into cursor temp
+		if reccount('temp')>0
+			this.id		= temp.id
+			this.nombre	= temp.nombre
+			this.telef	= temp.telef
+			this.ciudad = temp.ciudad
+		endif
+	retrun
+
+
+	*
+	* initValues()
+	* Inicializa las propiedades del objeto, con su valor default
+	*
+	function initValues
+		this.id = 0
+		this.nombre = ''
+		this.telefono = ''
+		this.ciudad = ''
+	return
+
+
+	*
+	* listarTodos()
+	* Lista todos los clientes actuales
+	*
+	function listarTodos()
+		select clientes
+		scan
+			? clientes.id, clientes.nombre, clientes.telef, clientes.ciudad
+		endscan
+	return
+
+
+	*
+	* listarAlguns(nIdIni, nIdFin)
+	* Lista los clientes que tiene id entre el rango nIdInicial y nIdFinal que se manda como parametro
+	*
+	function listarAlgunos(nIdIni, nIdFin)
+		select * from clientes where between(clientes.id, nIdIni, nIdFin) into cursor temp
+		selec temp
+		scan
+			? temp.id, temp.nombre, temp.telef, temp.ciudad
+		endscan
+	return
+
+enddefine
+
+
+
+
+
+
+
+
+
+
+
+
+? type('oForma')
+clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+Return: En los procedimientos/funciones return, regresa true / .t.
+
+
+
+
+
+
+Parametros por valor
+
+Parametros por referencia
+
+
+
