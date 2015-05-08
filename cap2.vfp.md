@@ -6,7 +6,7 @@ como crear una funcion
 
 ```vfp
 	function holamundo()
-		text("hola")
+		text("Hola mundo")
 ```
 
 
