@@ -17,7 +17,7 @@ define class clientes as custom
 ```
 Estos son algunos de los métodos necesarios para la creación de un módulo
 ```vfp
-crearTabla() //Crea la tabla de clientes, que es donde almacenaramos la informacion
+crearTabla() &&Crea la tabla de clientes, que es donde almacenaramos la informacion
 	
 function crearTabla()
 		create table clientes ( id n(5), nombre c(50), telefono c(30), ciudad c(50))
@@ -26,7 +26,7 @@ return
 ```
 
 ```vfp
-abrirTabla() //Abre la tabla de cliente o la crea en caso de ser necesario
+abrirTabla() &&Abre la tabla de cliente o la crea en caso de ser necesario
 	
 function abrirTabla()
 	if not file('clientes.dbf')
@@ -38,7 +38,7 @@ return
 ```
 
 ```vfp
-agregar() //Agrega un cliente a la base de datos, con la información contenida en las propiedades del objeto
+agregar() &&Agrega un cliente a la base de datos, con la información contenida en las propiedades del objeto
 
 function agregar()
 //obtener el ultimo id existente en la tabla
@@ -52,7 +52,7 @@ return
 ```
 
 ```vfp
-actualizar() //Actualiza la información del cliente, almacenándola en la base de datos
+actualizar() &&Actualiza la información del cliente, almacenándola en la base de datos
 	
 function actualizar()
 	select clientes
@@ -66,7 +66,7 @@ return
 
 ```vfp 
 eliminar()
-	//Elimina el registro del cliente con id
+	&&Elimina el registro del cliente con id
 		
 function eliminar()
 	delete from clientes where id==this.id
@@ -74,7 +74,7 @@ return
 ```
 
 ```vfp
-cargar(nId) //Carga el objeto con los datos del cliente que tiene el id que se manda como parametro
+cargar(nId) &&Carga el objeto con los datos del cliente que tiene el id que se manda como parametro
 	
 function cargar(nId)
 	this.initValues()
@@ -89,7 +89,7 @@ return
 ```
 
 ```vfp
-initValues() //Inicializa las propiedades del objeto, con su valor default
+initValues() &&Inicializa las propiedades del objeto, con su valor default
 
 function initValues
 	this.id = 0
@@ -101,7 +101,7 @@ return
 
 ```vfp
 listarTodos()
-	//Lista todos los clientes actuales
+	&&Lista todos los clientes actuales
 	
 function listarTodos()
 	select clientes
@@ -112,7 +112,7 @@ return
 ```
 ```vfp 
 listarAlguns(nIdIni, nIdFin)
-	//Lista los clientes que tiene id entre el rango nIdInicial y nIdFinal que se manda como parametro	
+	&&Lista los clientes que tiene id entre el rango nIdInicial y nIdFinal que se manda como parametro	
 function listarAlgunos(nIdIni, nIdFin)
 	select * from clientes where between(clientes.id, nIdIni, nIdFin) into cursor temp
 	selec temp
