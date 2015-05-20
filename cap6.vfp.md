@@ -26,9 +26,28 @@ wait wind (STR(nIdchofer)+" Registro eliminado")
 Método eliminar que se encuentra en la clase 'métodosPruebas'.
 ```vfp
 function eliminar(nIdchofer)
-	delete from choferes where idchofer==nIdchofer		
-	return
+	SET DELETED ON
+	delete from choferes where idchofer = nIdchofer
+return
 ```
+
+Método modificar que se encuentra en la clase 'métodosPruebas'.
+```vfp
+function actualizar(nIdchofer, cNombre, cCalle, cCiudad, cTelefono, cNumero, cColonia, cObservacion)
+	select choferes
+	update choferes set ;
+	nombre	= cNombre,;
+	calle	= cCalle,;
+	ciudad	= cCiudad,;
+	telefono = cTelefono,;
+	numero =  cNumero,;
+	colonia = cColonia,;
+	observaciones = cObservacion; 
+	where idchofer = nIdchofer
+	MESSAGEBOX ("Registro modificado")
+return
+```
+
 Botón Limpiar. Para limpiar los campos de textos de un formulario es necesario inicializar los valores. 
 ```vfp
 thisform.txtNoChofer.value = ''
