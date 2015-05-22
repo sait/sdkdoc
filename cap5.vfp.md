@@ -54,7 +54,7 @@ cNumero = thisform.txtnumero.value
 cColonia = thisform.txtcolonia.value
 cObs = thisform.txtobs.value
 
-*Se instancia la clase que contendrá los métodos en un objeto, se tiene que especificar la ruta de acceso.
+*Se instancia la clase que contendrá los métodos en un objeto y se tiene que especificar la ruta de acceso.
   
 oClase = newObject('metodosPruebas','C:\Documents and Settings\LaptopXP\Mis documentos\Choferes v1.1\metodos.prg')
 
