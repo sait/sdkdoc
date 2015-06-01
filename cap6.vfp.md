@@ -21,7 +21,7 @@ oClase = newObject('metodosPruebas','C:\Documents and Settings\LaptopXP\Mis docu
 
 oClase.eliminar(nIdchofer)
 
-wait wind (STR(nIdchofer)+"Registro eliminado")
+wait wind (STR(nIdchofer) + "Registro eliminado")
 ```
 Método eliminar que se encuentra en la clase 'métodosPruebas'.
 ```vfp
