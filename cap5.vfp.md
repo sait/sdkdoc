@@ -33,7 +33,7 @@ function agregar(nIdchofer, cNombre, cCalle, cCiudad, cTelefono, cNumero, cColon
 *Se ingresa los procesecimientos que se haran una vez que se active el método, este caso se hace una sentencia a una base de datos en sql.
 
 	INSERT INTO choferes (idchofer, nombre, calle, ciudad, telefono, numero, colonia, observaciones) VALUES (nIdchofer, this.cNombre, this.cCalle, this.cCiudad, this.cTelefono, this.cNumero, this.cColonia, this.cObservacion)
-		MESSAGEBOX ("Registro agregado")
+		wait wind "Registro agregado"
 	return
 
 *Por ultimo se da por finalizada la definición de la clase.
