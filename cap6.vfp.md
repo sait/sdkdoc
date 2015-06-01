@@ -1,4 +1,4 @@
-# CAPITULO  VFP
+# CAPITULO 6 VFP
 ----------
 Dentro del desarrollo del módulo se requiere de ciertas búsquedas necesarias para la obtención de datos específicos. 
 
