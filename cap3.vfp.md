@@ -1,4 +1,4 @@
-# CAPITULO 1 VFP
+# CAPITULO 3 VFP
 ----------
 
 Para la elaboración de un módulo de un sistema se requieren de clases y algunos métodos importantes para su correcto funcionamiento.
