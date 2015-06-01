@@ -44,7 +44,7 @@ function actualizar(nIdchofer, cNombre, cCalle, cCiudad, cTelefono, cNumero, cCo
 	colonia = cColonia,;
 	observaciones = cObservacion; 
 	where idchofer = nIdchofer
-	MESSAGEBOX ("Registro modificado")
+	wait wind "Registro modificado"
 return
 ```
 
