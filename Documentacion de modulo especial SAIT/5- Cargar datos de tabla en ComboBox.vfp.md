@@ -13,6 +13,7 @@
 El siguiente método realizara una conulsta a la tabka desea con el fin de almacenar el resultado de la consulta en el ComboBox.
 Posteriormente este método lo podemos hacer llamar desde el arranque inicial del formulario.
 
+```vfp
 *
 * CargarTipos()
 *
@@ -41,10 +42,11 @@ with thisform
 		.cbo_tipo.Enabled = .T.
 	endif
 endwith
-
+```
 -------------------------------------------------
 Las siguientes instrucciones se deberan ingresar en el método INIT del formulario, de esta manera de cuando se inicie la vetana se ejecutaran estas instrucciones.
 
+```vfp
 *
 * Forma.INIT
 *
@@ -63,8 +65,10 @@ Create cursor Temporal(;
 thisform.CargarTipos()
 * Se deja en blanco el valor de ComboBox
 thisform.cbo_tipo.Value = ''
+```
 -------------------------------------------------
 Al dar clic en el objeto, este caso en un botón, se ejecutara las instrucciones para guardar el valor del ComboBox en una tabla
+```vfp
 *
 * Guardar.CLICK
 *
@@ -74,3 +78,4 @@ Select Registro
 Go bott
 Append blank
 Replace TIPO = Temporal.ID
+```
