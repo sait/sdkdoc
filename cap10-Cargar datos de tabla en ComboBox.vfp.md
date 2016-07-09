@@ -10,7 +10,7 @@
 5. En el campo desplegable de 'Procedure' nos vamos hasta el ultimo elemento, donde se encontraran los métodos creados
 6. Al dar clic en el método ya podremos ingresar las instrucciones a este método
 
-El siguiente método realizara una conulsta a la tabka desea con el fin de almacenar el resultado de la consulta en el ComboBox.
+El siguiente método realizara una consulta a la tabla desea con el fin de almacenar el resultado de la consulta en el ComboBox.
 Posteriormente este método lo podemos hacer llamar desde el arranque inicial del formulario.
 
 ```vfp
@@ -22,7 +22,7 @@ Posteriormente este método lo podemos hacer llamar desde el arranque inicial de
 with thisform
 	.cbo_tipo.RowSourse = ''
 
-	* Se crea la consulta que traera consigo las columnas que se guardaran en el temporal
+	* Se crea la consulta que traerá consigo las columnas que se guardaran en el temporal
 	cSql = 'Select ID, TIPO form TablaOrigen'
 
 	* Ejecuta la consulta declarada anteriormente
@@ -30,11 +30,11 @@ with thisform
 		return
 	endif
 
-	* Si el resultaod de la consulta tiene 0 resultados, dejara en blanco el ComboBox y lo inhavilitara
+	* Si el resultado de la consulta tiene 0 resultados, dejara en blanco el ComboBox y lo inhabilitara
 	if reccount()==0
 		.cbo_tipo.value = ''
 		.cbo_tipo.enabled = .f.
-	* De lo contrario, actualizara los datos del ComboBox con una de la columna almancenada en el temporal
+	* De lo contrario, actualizara los datos del ComboBox con una de la columna almacenada en el temporal
 	else
 		Select Temporal
 		.cbo_tipo.RowSourse = 'Temporal.TIPO'
@@ -44,7 +44,7 @@ with thisform
 endwith
 ```
 -------------------------------------------------
-Las siguientes instrucciones se deberan ingresar en el método INIT del formulario, de esta manera de cuando se inicie la vetana se ejecutaran estas instrucciones.
+Las siguientes instrucciones se deberán ingresar en el método INIT del formulario, de esta manera de cuando se inicie la ventana se ejecutaran estas instrucciones.
 
 ```vfp
 *
