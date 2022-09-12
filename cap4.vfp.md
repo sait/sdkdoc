@@ -3,7 +3,7 @@
 
 Visual fox pro ofrece las herramientas necesarias que el usuario necesita para el manejo de datos de forma rápida y sencilla. Para ello, es importante conocer el uso de algunos comandos básicos en VFP.
 
-####COMANDOS
+#### COMANDOS
 
 Comando | use
 ----------- | ----
