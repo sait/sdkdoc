@@ -7,7 +7,7 @@ Visual fox pro ofrece las herramientas necesarias que el usuario necesita para e
 
 Comando | use
 ----------- | ----
-CD          | Se usa para cambiar de directorio en vfp
+CD          | Se usa para cambiar de directorio en VFP
 USE         | Permite abrir o cerrar una tabla
 Shared 	    | Permite compartir una tabla (a varios usuarios)
 Exclusive   | Permite abrir una tabla a un sólo usuario
