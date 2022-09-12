@@ -80,7 +80,7 @@ Para poder utilizar los objetos con las propiedades predeterminadas de la librer
 
 Ya creado el formulario es importante declarar ciertos parámetros que se ocuparan más adelante ya en la implementación del código, uno de ellos es la variable 'nModo', esta se declara desde vfp en ```Form > New Property...```
 
-Aparte se ocupa declarar dos métodos más, los cuales son ```'CargaInfo()``` y ```SaveInfo()```, esto desde ```Form > New Method...```.
+Aparte se ocupa declarar dos métodos más, los cuales son ```'CargaInfo()``` y ```SaveInfo()```, esto desde ```Form > New Method...```
 
 Dentro del método INIT del formulario se agregará el siguiente codigo:
 
