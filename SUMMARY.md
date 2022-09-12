@@ -5,4 +5,7 @@
 * [Capítulo 2 Formas](cap2.formas.md)
 * [Capítulo 3 Reportes](cap3.reportes.md)
 * [Capítulo 4 Comandos básicos](cap4.vfp.md)
+* [Capítulo 5 Métodos dentro de una clase](cap5.vfp.md)
+* [Capítulo 6 Busquedas en un Grid, eliminar y actualizar un registro](cap6.vfp.md)
+* 
 
