@@ -2,11 +2,11 @@
 -----------------
 #### Búsqueda dentro de catálogos
 
-Para realizar una búsqueda dentro del algunos de los módulos que se desarrollan, se utiliza una forma predeterminada de las librería de SAIT para realizar dicha acción. Esta permite hacer una ventana de búsqueda, en forma rápida y sencilla
+Para realizar una búsqueda dentro del algunos de los módulos que se desarrollan, se utiliza una forma predeterminada de las librerías de SAIT para realizar dicha acción. Esta permite hacer una ventana de búsqueda, en forma rápida y sencilla
 
-Las ventanas de búsqueda sirven de ayuda al usuario para que en caso que no recuerde la clave de algún registro, esta ventana buscara el registro por medio de palabras claves y si el usuario lo desea traerá a la ventana inicial de vuelta la clave del registro que busco.
+Las ventanas de búsqueda sirven de ayuda al usuario para que en caso que no recuerde la clave de algún registro, dicha ventana hace la busqueda del registro por medio de palabras claves y sí el usuario lo desea traerá a la ventana inicial de vuelta la clave del registro que buscó.
 
-Para la creación de formulario de búsqueda, dentro de la ventana de comandos (Window > Command Window) de vfp se ordena:
+Para la creación de formulario de búsqueda, dentro de la ventana de comandos ```(Window > Command Window)``` de vfp se ordena:
 ```vfp
 	   create form busqueda as Busqueda from E:\vfp\MSLLIB60\msllib60.vcx
 ```
