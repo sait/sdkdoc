@@ -1,12 +1,12 @@
-# MODULO ESPECIAL - VFP6
+# MÓDULO ESPECIAL - VFP6
 -----------------
-Uno de los aspectos más importantes para SAIT es la adaptabilidad a las empresas, por la experiencia que tenemos sabemos que existen giros de negocios con requerimientos especiales muy especificos, inclusive empresas del mismo giro manejan en forma muy distintas un mismo proceso, por eso contamos con un área exclusivamente para atender estas demandas.
+Uno de los aspectos más importantes para SAIT es la adaptabilidad a las empresas, por la experiencia que tenemos sabemos que existen giros de negocios con requerimientos especiales muy específicos, inclusive empresas del mismo giro manejan en forma muy distintas un mismo proceso, por eso contamos con un área exclusivamente para atender estas demandas.
 
 Los módulos especiales son opciones, no muy grandes, que se agregan a SAIT para que se adapte mejor a la empresa.
 
 Este documento contiene toda la información que usted como desarrollador necesita para realizar adecuaciones y funciones para mejorar la adaptabilidad de SAIT en la empresa o con su cliente.
 
-Dentro de la creación de un catalogo adicional para integrar junto con un modulo especial deberá contar con estas herramientas para poder desarrollar aplicaciones y adecuaciones a SAIT:
+Dentro de la creación de un catálogo adicional para integrar junto con un módulo especial deberá contar con estas herramientas para poder desarrollar aplicaciones y adecuaciones a SAIT:
 
 - Visual FoxPro 6.3 (Aplicación necesaria para codificar, LINK DE DESCARGA)
 - SAIT Software Administrativo (Para pruebas de integración, LINK DE DESCARGA)
@@ -21,8 +21,8 @@ SAIT desde sus inicios ha establecido un tamaño por default para los tamaños y
 SAIT Maneja un 5x5 Pixeles y un área de trabajo máximo de 1024x768.
 
 Ahora, se tiene que proceder a integrar las librerías especiales de SAIT a VFP.
-Desde Tools > Options > Controls
-Se agregan las siguientes librerias
+Desde ```Tools > Options > Controls```
+Se agregan las siguientes librerías
   
 - Apolo.vcx
 - catmsl.vcx
@@ -30,7 +30,7 @@ Se agregan las siguientes librerias
 
 Al haber terminado estos dos pasos es recomendable seleccionar la opción ``` Set As Default ``` con la finalidad de que estos pasos no se tengan que volver a realizar al iniciar de nuevo vfp. Dar en aceptar para dar por terminado el proceso.
 
-Desde la ventana de comandos (Window > Command Window) , nos colocamos sobre el directorio en el que se trabajará y donde se creará el sistema. 
+Desde la ventana de comandos ``` (Window > Command Window) ```, nos colocamos sobre el directorio en el que se trabajará y donde se creará el sistema. 
 ```vfp
 	CD F:\SAIT\DEMO
 ```
@@ -45,9 +45,9 @@ Muestra un grid con los registros actuales de la base de datos y presenta botone
 
 #### Catálogo de choferes
 
-Ahora se procederá a crear el catalogo inicial que mostrara la lista de registros que sean añadidos a una determinada tabla. Dentro del método INIT del formulario se agregara el siguiente código:
+Ahora se procederá a crear el catálogo inicial que mostrara la lista de registros que sean añadidos a una determinada tabla. Dentro del método INIT del formulario se agregará el siguiente código:
 
-Catmsl1.init
+#### Catmsl1.init
 ```vfp
 	if not OpenDbf('Choferes', 'IDCHOFER')
 		return .F. 
@@ -69,20 +69,20 @@ Catmsl1.init
 	* Campos a desplegar en la vista principal, separados con |
 	this.cExprs = 'Choferes.IDCHOFER|Choferes.NOMBRE|Choferes.DIRECCION|Choferes.NUMERO|Choferes.COLONIA|Choferes.CIUDAD|Choferes.TELEFONO|Choferes.OBSERVACIONES'
 ```
-Este es el código necesario dentro del formulario de catalogo. Ahora se debe proceder a la creación de una ventana para la edición de datos de registros.
+Este es el código necesario dentro del formulario de catálogo. Ahora se debe proceder a la creación de una ventana para la edición de datos de registros.
 
 Para crear el formulario de datos utilizamos el siguiente código en la ventana de comandos de vfp.
 ```vfp
 	create form choferesdat as formamsl from Z:\sistemas\msllib60\msllib60.vcx
 ```
 
-Para poder utilizar los objetos con las propiedades predeterminadas de la librería seleccionamos 'View Classes' de la barra de herramientas (View > Form Controls Toolbar) y seleccionamos la opción de 'Msllib60'.
+Para poder utilizar los objetos con las propiedades predeterminadas de la librería seleccionamos ```View Classes``` de la barra de herramientas ```(View > Form Controls Toolbar)``` y seleccionamos la opción de ```Msllib60'```
 
-Ya creado el formulario es importante declarar ciertos parámetros que se ocuparan mas adelante ya en la implementación del código, uno de ellos es la variable 'nModo', esta se declara desde vfp en 'Form > New Property...'.
+Ya creado el formulario es importante declarar ciertos parámetros que se ocuparan más adelante ya en la implementación del código, uno de ellos es la variable 'nModo', esta se declara desde vfp en ```Form > New Property...```
 
-Aparte se ocupa declarar dos métodos mas, los cuales son 'CargaInfo()' y 'SaveInfo()', esto desde 'Form > New Method...'.
+Aparte se ocupa declarar dos métodos más, los cuales son ```'CargaInfo()``` y ```SaveInfo()```, esto desde ```Form > New Method...```.
 
-Dentro del método INIT del formulario se agregara el siguiente codigo:
+Dentro del método INIT del formulario se agregará el siguiente codigo:
 
 Formamsl1.init
 ```vfp 
@@ -154,7 +154,7 @@ Formamsl1.init
 	EndWith
 ```
 
-Dentro del formulario es necesario tener un campo de texto que mostrando y registrando la clave del registro. Es recomendable añadir la siguiente validación dentro del método 'Valid'.
+Dentro del formulario es necesario tener un campo de texto que muestre y registre la clave del registro. Es recomendable añadir la siguiente validación dentro del método 'Valid'.
 
 IdChofer.Valid
 ```vfp
@@ -162,7 +162,7 @@ IdChofer.Valid
 	this.Value=PadL(Allt(this.Value),5)
 ```
 
-Como se menciono anteriormente, es necesario la implementación de dos métodos declarados por nosotros mismos, ahora se pasara a la codificación de cada uno.
+Como se menciono anteriormente, es necesario la implementación de dos métodos declarados por nosotros mismos, ahora se pasará a la codificación de cada uno.
 
 Dentro del metodo 'SaveInfo()':
 
@@ -181,7 +181,7 @@ Formamsl.saveinfo
 				OBSERVACIONES 	With 	Allt(.Observaciones.value)
 	endwith
 ```
-Dentro del metodo 'CargarInfo()':
+Dentro del método 'CargarInfo()':
 
 Formammsl.cargarinfo
 ```vfp
@@ -198,7 +198,7 @@ Formammsl.cargarinfo
 		
 	EndWith
 ```
-Dentro del formulario se necesita un boton que ejecutara dichas acciones que se le integraran dentro del método 'Click()' que viene por default en la herramienta.
+Dentro del formulario se necesita un botón que ejecutará dichas acciones que se integrarán dentro del método 'Click()' que viene por default en la herramienta.
 
 grabar.Click
 ```vfp
