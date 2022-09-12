@@ -5,7 +5,7 @@ Para la elaboración de un módulo de un sistema se requieren de clases y alguno
 
 Se le conoce como método a una serie de sentencias que permite llevar a cabo una acción. 
 
-####Ejemplo
+#### Ejemplo
 
 Se define una clase en donde se incluirán los métodos
 ```vfp 
