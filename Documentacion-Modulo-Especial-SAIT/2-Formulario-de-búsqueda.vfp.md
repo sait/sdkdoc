@@ -32,7 +32,7 @@ Solo se necesita configurar algunas propiedades para que funcione correctamente 
 	this.retval = 'IDCHOFER'
 	* SQL a realizar para la búsqueda.
 	this.csql = ''
-	```
+```
 
 Dentro del formulario de catálogos, se requiere escoger una de las herramientas que se encuentra en la librería 'MSllib60' la cuál se llama leecve que nos ayuda a abrir la forma de búsqueda y recibir la clave y nombre en ella, solo se modifica algunas de sus propiedades: 
 
