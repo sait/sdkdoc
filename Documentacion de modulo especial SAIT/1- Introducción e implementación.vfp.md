@@ -1,12 +1,12 @@
 # MODULO ESPECIAL - VFP6
 -----------------
-Uno de los aspectos más importantes para SAIT es la adaptabilidad a su empresa, por la experiencia que tenemos, sabemos que existen giros de negocios con requerimientos especiales muy especificos, inclusive empresas del mismo giro manejan en forma muy distintas un mismo proceso, por eso contamos con un área para exclusivamente para atender estas demandas.
+Uno de los aspectos más importantes para SAIT es la adaptabilidad a las empresas, por la experiencia que tenemos sabemos que existen giros de negocios con requerimientos especiales muy especificos, inclusive empresas del mismo giro manejan en forma muy distintas un mismo proceso, por eso contamos con un área exclusivamente para atender estas demandas.
 
-Los módulos especiales son opciones, no muy grandes, que se agregan a SAIT para que se adapte mejor a su empresa.
+Los módulos especiales son opciones, no muy grandes, que se agregan a SAIT para que se adapte mejor a la empresa.
 
-Este documento contiene toda la información que usted como desarrollador necesita para realizar adecuaciones y funciones para mejorar la adaptabilidad de SAIT en su empresa o con su cliente.
+Este documento contiene toda la información que usted como desarrollador necesita para realizar adecuaciones y funciones para mejorar la adaptabilidad de SAIT en la empresa o con su cliente.
 
-Dentro de la creación de un catalogo adicional para integrar junto con un modulo especial deberá contar con esta herramienta para poder desarrollar aplicaciones y adecuaciones a SAIT:
+Dentro de la creación de un catalogo adicional para integrar junto con un modulo especial deberá contar con estas herramientas para poder desarrollar aplicaciones y adecuaciones a SAIT:
 
 - Visual FoxPro 6.3 (Aplicación necesaria para codificar, LINK DE DESCARGA)
 - SAIT Software Administrativo (Para pruebas de integración, LINK DE DESCARGA)
@@ -14,13 +14,13 @@ Dentro de la creación de un catalogo adicional para integrar junto con un modul
 
 Para el desarrollo de catálogos en Visual FoxPro, SAIT ha diseñado sus propias librerías para facilitarle a los programadores su proceso, unificando las propiedades que se requieren para que la apariencia sea la misma en todos los casos. 
 
-Para su implementación de ello es necesario seguir esta serie de pasos desde el programa vfp (Visual FoxPro):
+Para su implementación es necesario seguir esta serie de pasos desde el programa VFP (Visual FoxPro):
 
-SAIT desde sus inicios ha establecido un tamaño por default para los tamaños y calidad de ventanas, entonces si aún no está definido el píxel y área de trabajo seleccionamos lo siguiente del menú de vfp. 
+SAIT desde sus inicios ha establecido un tamaño por default para los tamaños y calidad de ventanas, entonces si aún no está definido el píxel y área de trabajo seleccionamos lo siguiente del menú de VFP. 
 Tools > Options > Forms 
-SAIT Maneja un 5x5 PX y un área de trabajo máximo de 1024x768.
+SAIT Maneja un 5x5 Pixeles y un área de trabajo máximo de 1024x768.
 
-Ahora se tiene que proceder a integrar las librerías especiales de SAIT a vfp.
+Ahora, se tiene que proceder a integrar las librerías especiales de SAIT a VFP.
 Desde Tools > Options > Controls
 Se agregan las siguientes librerias
   
@@ -28,7 +28,7 @@ Se agregan las siguientes librerias
 - catmsl.vcx
 - msllib60.vcx
 
-Al haber terminado estos dos pasos es recomendable seleccionar la opción "Set As Default" con la finalidad de que estos pasos no se tengan que volver a realizar al iniciar de nuevo vfp. Dar en aceptar para dar por terminado el proceso.
+Al haber terminado estos dos pasos es recomendable seleccionar la opción ``` Set As Default ``` con la finalidad de que estos pasos no se tengan que volver a realizar al iniciar de nuevo vfp. Dar en aceptar para dar por terminado el proceso.
 
 Desde la ventana de comandos (Window > Command Window) , nos colocamos sobre el directorio en el que se trabajará y donde se creará el sistema. 
 ```vfp
@@ -39,7 +39,7 @@ Y creamos la forma con las propiedades definidas de la librería.
 ```vfp
 	create form choferescat as catmsl from Z:\sistemas\msllib60\catmsl.vcx
 ```
-Básicamente se esta ordenando que se cree una nueva ventana con las propiedades de la librería CatMsl previamente añadida a vfp.
+Básicamente se está ordenando que se cree una nueva ventana con las propiedades de la librería * CatMs * previamente añadida a vfp.
 
 Muestra un grid con los registros actuales de la base de datos y presenta botones para Agregar/ Modificar y Borrar registros.
 
