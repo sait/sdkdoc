@@ -9,5 +9,5 @@
 * [Capítulo 6. Busquedas en un Grid, eliminar y actualizar un registro](cap6.vfp.md)
 * [Capítulo 7. Implementar Creación y modificación](cap7.vfp.md)
 * [Capítulo 8. Condiciones IF en Formularios](cap8.vfp.md)
-* [Capítulo 9. Crear Formularios tipos Wizard](cap9-Crear wizard.vfp.md)
+* [Capítulo 9. Crear Formularios tipos Wizard](cap9.vfp.md)
 * 
