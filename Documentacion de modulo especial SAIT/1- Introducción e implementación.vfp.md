@@ -39,7 +39,7 @@ Y creamos la forma con las propiedades definidas de la librería.
 ```vfp
 	create form choferescat as catmsl from Z:\sistemas\msllib60\catmsl.vcx
 ```
-Básicamente se está ordenando que se cree una nueva ventana con las propiedades de la librería * CatMs * previamente añadida a vfp.
+Básicamente se está ordenando que se cree una nueva ventana con las propiedades de la librería ``` CatMs ``` previamente añadida a vfp.
 
 Muestra un grid con los registros actuales de la base de datos y presenta botones para Agregar/ Modificar y Borrar registros.
 
