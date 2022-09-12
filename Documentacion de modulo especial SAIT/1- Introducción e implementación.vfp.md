@@ -17,7 +17,7 @@ Para el desarrollo de catálogos en Visual FoxPro, SAIT ha diseñado sus propias
 Para su implementación es necesario seguir esta serie de pasos desde el programa VFP (Visual FoxPro):
 
 SAIT desde sus inicios ha establecido un tamaño por default para los tamaños y calidad de ventanas, entonces si aún no está definido el píxel y área de trabajo seleccionamos lo siguiente del menú de VFP. 
-Tools > Options > Forms 
+``` Tools > Options > Forms ```
 SAIT Maneja un 5x5 Pixeles y un área de trabajo máximo de 1024x768.
 
 Ahora, se tiene que proceder a integrar las librerías especiales de SAIT a VFP.
