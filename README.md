@@ -6,7 +6,9 @@ Muchas Gracias
 ### Contenido
 [Summary](SUMMARY.md)
 
-[Desarrollos especiales](Documentacion-Modulo-Especial-SAIT/1-Introducción-e-implementación.vfp.md)
+[Desarrollos especiales. Crear Formularios](Documentacion-Modulo-Especial-SAIT/1-Introducción-e-implementación.vfp.md)
+
+[Desarrollos especiales. Crear formualrio de búsqueda](Documentacion-Modulo-Especial-SAIT/2-Formulario-de-búsqueda.vfp.md)
 
 
 ### Videos sobre Reporteador
