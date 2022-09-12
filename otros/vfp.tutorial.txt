@@ -1,4 +1,4 @@
-## Tipos de Datos
+Tipos de Datos
 
 	Numeric
 		3
@@ -19,11 +19,11 @@
 		{ {1970/12/03 14:35:59}}
 
 
-## Variables
+Variables
 	nTotal = 10
 	m.Nombre = 'Ignacio'
 
-## Arreglos
+Arreglos
 	dimension nombres[3]
 	nombres[1] = 'Hugo'
 	nombres[2] = 'Paco'
@@ -31,7 +31,7 @@
 	? nombres[1]
 
 
-## Operadores
+Operadores
 	==		if nTotal == 0
 	<>		if nTotal <> 0
 	+		x = x + 1
@@ -40,18 +40,18 @@
 	*		nImporte = nTotal * nTC
 
 
-## Comentarios
+Comentarios
 	Al inicio de linea con *
 	A la derecha de linea con &&
 
-## Print
+Print
 	? <Expr>
 	? 10
 	? 'Ignacio'
 	nTotal = 1500
 	? nTotal
 
-## Ciclos FOR
+Ciclos FOR
 
 	for i=1 to 100
 		? i
@@ -65,7 +65,7 @@
 		? cNombre
 	next
 
-## IF
+IF
 	nCalif = 100
 	if nCalif >= 90
 		? 'Felicidades'
@@ -74,13 +74,13 @@
 	endif
 
 
-## Ciclo DoWhile Sencillo
+Ciclo DoWhile Sencillo
 	nRenglon = 1
 	do while nRenglon <= 50
 		? 'Este es el renglon:', nRenglon
 	enddo
 
-## Ciclo DoWhile / Loop / Exit
+Ciclo DoWhile / Loop / Exit
 	nRenglon = 1
 	do while nRenglon <= 50
 		* Con esta funcion los renglones pares los saltaremos y nos los imprimimos
@@ -95,7 +95,7 @@
 	enddo
 
 
-## Ciclo Scan Database
+Ciclo Scan Database
 	* crear una table y llenarla con 3 registros
 	create table clientes ( nombre c(30), ciudad c(30))
 	insert into clientes values ('Juan Perez','Monterrey')
@@ -106,7 +106,7 @@
 		? clientes.nombre, clientes.ciudad
 	endscan
 
-## Funciones de String
+Funciones de String
 	? chr(65)
 	? substr('Adios Mundo Cruel',7,3)
 	? left('Mexico',3)
@@ -115,28 +115,28 @@
 	? strtran('Rapido Ruedan las Ruedas', 'R', 'RR') ???
 
 
-## Funciones Matematicas
+Funciones Matematicas
 	? abs(-50)
 	? mod(100,2)
 	? round(3.1416,3)
 	? ceil(3.1416)
 	? int(3.1416)
 
-## Abreviacion con 4 letras
+Abreviacion con 4 letras
 	Modify Command miprograma
 	Modi Comm miprograma
 	? roun(19.5,0)
 	20
 
-## Editor de VFP
+Editor de VFP
 	Modi Comm
 
-## Compilar programa
+Compilar programa
 	Program / Compile
 	Genera el archivo .fxp
 	FXP Compilado de FoxPro
 
-## Tipos de Variables
+Tipos de Variables
 	Mencionar que las variables son de tipo flexible, es decir puede cambiar de tipom 
 	Total = 100
 	Total = 'Cien'
@@ -144,10 +144,10 @@
 	Total = .t.
 	Total = .f.
 
-## Arreglos
+Arreglos
 	Inician en 1 hasta N
 
-## Notacion, de variables
+Notacion, de variables
 	Metodo que usas para nombrar tus variables, propiedades, clases y funciones
 	camel typed
 	Metodos o funciones, incian con Minuscula, la siguientes palabras incial con mayuscula
