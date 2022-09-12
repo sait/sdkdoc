@@ -2,7 +2,7 @@
 ----------
 Dentro del desarrollo del módulo se requiere de ciertas búsquedas necesarias para la obtención de datos específicos. 
 
-####Código
+#### Código
 
 Código necesario para la búsqueda sensible en un Grid desde un campo de texto.
 ```vfp 
