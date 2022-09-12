@@ -8,7 +8,7 @@ Esto se implemento en el uso de interfaz mediante el uso de  formas.
 Todo esto fue con el fin de implementarse los conocimientos en la creación de modulo especial para SAIT en la administración de entregas por pedidos.
 
 
-###Avance de aplicación
+### Avance de aplicación
 
 ```vfp
 ------En la clase
