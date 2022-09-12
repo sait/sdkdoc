@@ -2,7 +2,7 @@
 
 * [Introducción a VFP](otros/vfp.tutorial.txt)
 * [Capítulo 1. VFP](capitulos/cap1.vfp.md)
-* [Capítulo 2. Formas](capitulos/cap2.formas.md)
+* [Capítulo 2. Formas](capitulos/cap2.vfp.md)
 * [Capítulo 3. Reportes](capitulos/cap3.reportes.md)
 * [Capítulo 4. Comandos básicos](capitulos/cap4.vfp.md)
 * [Capítulo 5. Métodos dentro de una clase](capitulos/cap5.vfp.md)
