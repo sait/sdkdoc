@@ -10,6 +10,6 @@
 * [Capítulo 7. Implementar Creación y modificación](capitulos/cap7.vfp.md)
 * [Capítulo 8. Condiciones IF en Formularios](capitulos/cap8.vfp.md)
 * [Capítulo 9. Crear Formularios tipos Wizard](capitulos/cap9.vfp.md)
-* [Capítulo 10. Cargar datos de tabla en ComboBox](capitulos/cap10.vpf.md)
+* [Capítulo 10. Cargar datos de tabla en ComboBox](capitulos/cap10.vfp.md)
 * [Catálogo Chóferes. Desarrollo Especial](capitulos/choferescat.vfp.md)
 * [Capacitación técnica SAIT](capitulos/sumario.vfp.md)
