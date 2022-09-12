@@ -1,13 +1,13 @@
 Capítulo 7 VFP
 ===================
 
-Para facilitar el registro y modificación de registros dentro una tabla es necesario consultar los datos que contiene dicho registro sin tener que revisar directamente la tabla. 
+Para hacer más fácil crear y modifciar un registros en una tabla es necesario hacer una consulta a los datos que contiene el registro existente sin tener que consultar toda la tabla.
 
 Una manera sencilla es extrayendo los datos y colarlos en los campos de texto que se encuentran en el formulario. 
 
-###Avance de aplicación
+### Avance de aplicación
 
-Primeramente es una recomendación que el numero identificador del registro sea autoincrementable, así para ayudar al usuario a no tener que verificar cual fue el ultimo registro que se hizo.
+Primeramente es una recomendación que el numero identificador del registro sea autoincrementable, así podrá ayudar al usuario a no tener que verificar cual fue el último registro que se hizo.
 
 ```vfp
 ------En la clase
@@ -21,7 +21,7 @@ oClase = newObject('abcProductos','C:\Documents and Settings\LaptopXP\Mis docume
 thisform.txtproducto.Value=oClase.cargarId()
 ```
 
-Como se menciono anteriormente,  suele ser útil que los campos dentro de los formularios se actualicen conforme el registro que se quiere modificar en este caso. En este ejemplo se puede ver que al momento en que la aplicación verifica que el registro existe, este extrae sus dato; De lo contrario el formulario se prepara para un nuevo registro.
+Como se mencionó anteriormente,  suele ser útil que los campos dentro de los formularios se actualicen conforme el registro que se quiere modificar. En este ejemplo se puede ver que al momento en que la aplicación verifica que el registro existe, este extrae sus datos; De lo contrario el formulario se prepara para un nuevo registro.
 
 ```vfp
 *Este código se implemento en el evento KeyPress de un cuadro de texto. 
