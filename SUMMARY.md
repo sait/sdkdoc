@@ -12,3 +12,4 @@
 * [Capítulo 9. Crear Formularios tipos Wizard](cap9.vfp.md)
 * [Capítulo 10. Cargar datos de tabla en ComboBox](cap10.vpf.md)
 * [Catálogo Chóferes. Desarrollo Especial](choferescat.vfp.md)
+* [Capacitación técnica SAIT](sumario.vfp.md)
