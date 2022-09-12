@@ -10,6 +10,8 @@ Muchas Gracias
 
 [Desarrollos especiales. Crear formualrio de búsqueda](Documentacion-Modulo-Especial-SAIT/2-Formulario-de-búsqueda.vfp.md)
 
+[Desarrollos especiales. Funciones adicionales](Documentacion-Modulo-Especial-SAIT/3-Funciones-adicionales.vfp.md)
+
 
 ### Videos sobre Reporteador
 - [2016 Reporteador](https://www.youtube.com/watch?v=YnY1TU8dAx8)
