@@ -5,6 +5,7 @@ Muchas Gracias
 
 ### Contenido
 [Summary](SUMMARY.md)
+[Desarrollos especiales](Documentacion de modulo especial SAIT/1- Introducción-e-implementación.vfp.md)
 
 
 ### Videos sobre Reporteador
