@@ -18,8 +18,8 @@ Encontrar este tipo de código es bastante normal ya que FoxPro es un lenguaje d
 |----------|----------|
 |Character | cName    |
 |Numeric   | nAge     |
-|Logic     | lIsValid |
-|Date      | dBirthday|
+|Logic     | lValid |
+|Date & DateTime | dBirthday|
 
 
 Algunos comandos
