@@ -38,11 +38,14 @@ Operadores
 	-		y = y - 1
 	/		nFactor = nValor / 1.1
 	*		nImporte = nTotal * nTC
-
+	%		nResiduo = nValor % 2
 
 Comentarios
 	Al inicio de linea con *
+	* Esto es un comentario en VFP
+	
 	A la derecha de linea con &&
+	Esto es otro comentario en VFP &&
 
 Print
 	? <Expr>
