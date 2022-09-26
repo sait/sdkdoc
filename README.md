@@ -12,6 +12,9 @@ Muchas Gracias
 
 [Desarrollos especiales. Funciones adicionales](Documentacion-Modulo-Especial-SAIT/3-Funciones-adicionales.vfp.md)
 
+### Documentos de apoyo
+[Libros](books/)
+[Documentos](otros/)
 
 ### Videos sobre Reporteador
 - [2016 Reporteador](https://www.youtube.com/watch?v=YnY1TU8dAx8)
