@@ -38,11 +38,14 @@ Operadores
 	-		y = y - 1
 	/		nFactor = nValor / 1.1
 	*		nImporte = nTotal * nTC
-
+	%		nResiduo = nValor % 2
 
 Comentarios
 	Al inicio de linea con *
+	* Esto es un comentario en VFP
+	
 	A la derecha de linea con &&
+	Esto es otro comentario en VFP &&
 
 Print
 	? <Expr>
@@ -95,7 +98,7 @@ Ciclo DoWhile / Loop / Exit
 	enddo
 
 
-Ciclio Scan Database
+Ciclo Scan Database
 	* crear una table y llenarla con 3 registros
 	create table clientes ( nombre c(30), ciudad c(30))
 	insert into clientes values ('Juan Perez','Monterrey')
@@ -156,7 +159,7 @@ Notacion, de variables
 		bandera
 		perro
 	Iniciamos la variables con una letra que indica el tipo
-		nTotal  	es numerica / integre
+		nTotal  	es numerica / integer
 		dFecha		es fecha o date
 		cNombre		es caracter / character / string
 		lExiste		es logica o boleana (true o false)

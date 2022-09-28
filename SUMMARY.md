@@ -1,7 +1,15 @@
 # Summary
 
-* [introduction](README.md)
-* [Capítulo 1 VFP](cap1.vfp.md)
-* [Capítulo 2 Formas](cap2.formas.md)
-* [Capítulo 3 Reportes](cap3.reportes.md)
-
+* [Introducción a VFP](otros/vfp.tutorial.txt)
+* [Capítulo 1. VFP](capitulos/cap1.vfp.md)
+* [Capítulo 2. Formas](capitulos/cap2.vfp.md)
+* [Capítulo 3. Reportes](capitulos/cap3.vfp.md)
+* [Capítulo 4. Comandos básicos](capitulos/cap4.vfp.md)
+* [Capítulo 5. Métodos dentro de una clase](capitulos/cap5.vfp.md)
+* [Capítulo 6. Busquedas en un Grid, eliminar y actualizar un registro](capitulos/cap6.vfp.md)
+* [Capítulo 7. Implementar Creación y modificación](capitulos/cap7.vfp.md)
+* [Capítulo 8. Condiciones IF en Formularios](capitulos/cap8.vfp.md)
+* [Capítulo 9. Crear Formularios tipos Wizard](capitulos/cap9.vfp.md)
+* [Capítulo 10. Cargar datos de tabla en ComboBox](capitulos/cap10.vfp.md)
+* [Catálogo Chóferes. Desarrollo Especial](capitulos/choferescat.vfp.md)
+* [Capacitación técnica SAIT](capitulos/sumario.vfp.md)
